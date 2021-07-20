@@ -2,6 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+// List of data 
+// https://www.shutterfly.com/ideas/what-to-write-in-a-get-well-card/
+
+
+/// Lotti Interaction 
+// https://lottiefiles.com/interactivity?url=https%3A%2F%2Fassets3.lottiefiles.com%2Fprivate_files%2Flf30_net0ope9.json
 export default function Home() {
   return (
     <div className={styles.container}>
