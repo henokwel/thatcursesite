@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
+
 
 // List of data 
 // https://www.shutterfly.com/ideas/what-to-write-in-a-get-well-card/
@@ -9,6 +11,13 @@ import styles from '../styles/Home.module.css'
 /// Lotti Interaction 
 // https://lottiefiles.com/interactivity?url=https%3A%2F%2Fassets3.lottiefiles.com%2Fprivate_files%2Flf30_net0ope9.json
 export default function Home() {
+  const [name, setName] = useState(undefined)
+
+
+  const handleSubmit = e => {
+    e.preventDefault()
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +26,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+
+      <header className={styles.header}>
+        <form onSubmit={handleSubmit}>
+          <input type="text" onChange={e => setName(e.target.value)} />
+        </form>
+
+      </header>
+
       <main className={styles.main}>
+
+      </main>
+
+
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -69,7 +92,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

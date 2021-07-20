@@ -1,4 +1,8 @@
 .container {
+  /* background-image: ; */
+  background: url("/bgp.svg") no-repeat center center fixed;
+
+  background-size: cover;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -6,6 +10,56 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #fdf9f2;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/boxmonster.png") no-repeat top center fixed;
+  height: 30vh;
+  width: 100vw;
+}
+
+.header form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.header input{
+  width: 50%;
+}
+
+
+.main{
+  height: 60vh;
+  /* background-color: #0070f3; */
+  width: 100vw;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    background: url("/bgpattern_m.svg") no-repeat top center fixed;
+    background-size: cover;
+    background-color: #fdf9f2;
+
+
+    /* background-color: red; */
+  }
+  .header{
+    background: url("/boxmonter_m_hd.svg") no-repeat top center fixed;
+    background-size: contain;
+
+
+
+  }
 }
 
 .main {
@@ -65,8 +119,8 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
 }
 
 .grid {
